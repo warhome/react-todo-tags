@@ -1,0 +1,53 @@
+.task {
+  position: relative;
+  width: 90%;
+  height: 95px;
+  border-radius: 12px;
+  margin-bottom: 1vh;
+  &__container {
+    position: relative;
+    height: 100%;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    .task-name {
+      font-size: 1.5em;
+      display: inline-block;
+      margin-top: 3vh;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .status {
+      position: absolute;
+      right: 0;
+      top: 25%;
+    }
+    .date {
+      position: absolute;
+      right: 0;
+      bottom: 10%;
+      font-size: 1em;
+      line-height: 12px;
+
+      color: rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &.task_completed {
+    background: rgba(0, 201, 20, 0.15);
+  }
+  &.task_in-progress {
+    background: rgba(250, 255, 0, 0.15);
+  }
+  &.task_new {
+    background: rgba(224, 224, 224, 0.1);
+  }
+  &.task_canceled {
+    background: rgba(201, 0, 0, 0.1);
+  }
+
+  .delete {
+    position: absolute;
+    top: 40%;
+    right: -5%;
+    cursor: pointer;
+  }
+}

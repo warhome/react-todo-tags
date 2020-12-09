@@ -1,0 +1,22 @@
+.sieve {
+  display: flex;
+  margin-top: 1vh;
+  .filter {
+    display: flex;
+    align-items: center;
+  }
+  .sort {
+    display: flex;
+    align-items: center;
+    margin-left: 1vh;
+  }
+  .sieve-text {
+    font-size: 1.5em;
+    margin-left: 10px;
+    color: #b04dfe;
+    cursor: pointer;
+  }
+  .sieve-text:hover {
+    color: #9000ff;
+  }
+}

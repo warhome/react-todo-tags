@@ -1,0 +1,11 @@
+.tag {
+  background: rgba(196, 196, 196, 0.25);
+  border-radius: 5px;
+  margin: 0.5vh 1vh 0.5vh 0;
+  span {
+    display: inline-block;
+    margin: 0.4vh 1vh;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}

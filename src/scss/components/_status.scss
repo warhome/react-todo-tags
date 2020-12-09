@@ -1,0 +1,35 @@
+.status {
+  height: 45px;
+  background: rgba(196, 196, 196, 0.15);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  &__type {
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  &.status_completed {
+    .status__type {
+      color: #00c914; 
+    }
+  }
+  &.status_in-progress {
+    .status__type {
+      color: #ffe600;
+    }
+  }
+  &.status_new {
+    .status__type {
+      color: #979797;
+    }
+  }
+  &.status_canceled {
+    .status__type {
+      color: rgba(201, 0, 0, 0.74);
+    }
+  }
+}
